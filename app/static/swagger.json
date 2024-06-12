@@ -68,7 +68,7 @@
         }
       }
     },
-    "/api/restaurants": {
+    "/api/restaurantes": {
       "get": {
         "summary": "Obtiene la lista de todos los restaurantes",
         "tags": [
@@ -88,7 +88,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Restaurant"
+                    "$ref": "#/components/schemas/Restaurante"
                   }
                 }
               }
@@ -110,7 +110,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Restaurant"
+                "$ref": "#/components/schemas/Restaurante"
               }
             }
           }
@@ -121,7 +121,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurant"
+                  "$ref": "#/components/schemas/Restaurante"
                 }
               }
             }
@@ -129,7 +129,7 @@
         }
       }
     },
-    "/api/restaurants/{id}": {
+    "/api/restaurantes/{id}": {
       "get": {
         "summary": "Obtiene un restaurante específico por su ID",
         "tags": [
@@ -157,7 +157,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurant"
+                  "$ref": "#/components/schemas/Restaurante"
                 }
               }
             }
@@ -191,7 +191,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Restaurant"
+                "$ref": "#/components/schemas/Restaurante"
               }
             }
           }
@@ -202,7 +202,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurant"
+                  "$ref": "#/components/schemas/Restaurante"
                 }
               }
             }
@@ -242,7 +242,7 @@
         }
       }
     },
-    "/api/reservations": {
+    "/api/reservas": {
       "get": {
         "summary": "Obtiene la lista de reservas del usuario actual",
         "tags": [
@@ -272,7 +272,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Reservation"
+                    "$ref": "#/components/schemas/Reserva"
                   }
                 }
               }
@@ -306,7 +306,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Reservation"
+                "$ref": "#/components/schemas/Reserva"
               }
             }
           }
@@ -317,7 +317,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Reservation"
+                  "$ref": "#/components/schemas/Reserva"
                 }
               }
             }
@@ -325,7 +325,7 @@
         }
       }
     },
-    "/api/reservations/{id}": {
+    "/api/reservas/{id}": {
       "get": {
         "summary": "Obtiene una reserva específica por su ID para el usuario actual",
         "tags": [
@@ -361,7 +361,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Reservation"
+                  "$ref": "#/components/schemas/Reserva"
                 }
               }
             }
@@ -402,7 +402,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Reservation"
+                "$ref": "#/components/schemas/Reserva"
               }
             }
           }
@@ -413,7 +413,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Reservation"
+                  "$ref": "#/components/schemas/Reserva"
                 }
               }
             }
@@ -518,7 +518,7 @@
           "password"
         ]
       },
-      "Restaurant": {
+      "Restaurante": {
         "type": "object",
         "properties": {
           "id": {
@@ -555,7 +555,7 @@
           "rating"
         ]
       },
-      "Reservation": {
+      "Reserva": {
         "type": "object",
         "properties": {
           "id": {
